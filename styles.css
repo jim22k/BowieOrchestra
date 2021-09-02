@@ -1,21 +1,21 @@
-html {
+html{
     scroll-behavior: smooth;
     font-family: 'Rubik', sans-serif;
 }
-body {
+body{
     margin:0;
     padding:0;
 }
-::-webkit-scrollbar {
+::-webkit-scrollbar{
     width: 10px;
 }
-::-webkit-scrollbar-track {
+::-webkit-scrollbar-track{
     background-color: #333;
 }
-::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb{
     background: #777;
 } 
-::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover{
     background: #a70f23;
 } 
 
@@ -46,16 +46,16 @@ body {
     top:0;
     background-color: white;
 }
-.navbar button {
+.navbar button{
     border: none;
     background-color: white;
     font-size: large;
     transition: transform .1s;
 }
-.navbar a:not(.navbar-image) {
+.navbar a:not(.navbar-image){
     padding:1%;
 }
-.navbar a:hover button, .navbar a:hover {
+.navbar a:hover button, .navbar a:hover{
     cursor: pointer;
 }
 .navbar a:hover button{
@@ -63,7 +63,7 @@ body {
     transform: scale(1.1);
     text-decoration: #d4122c underline 2px;
 }
-.navbar-image {
+.navbar-image{
     width:5%;
 }
 .navbar-image img{
@@ -81,7 +81,7 @@ body {
     .navbar-image{
         width:10%;
     }
-    .navbar a:not(.navbar-image) {
+    .navbar a:not(.navbar-image){
         padding:5%;
     }
 }
@@ -120,8 +120,8 @@ body {
     text-align: center;
     text-shadow: #000000 0 2px;
 }
-@media screen and (max-width: 600px) {
-    .backgroundimage-header {
+@media screen and (max-width: 600px){
+    .backgroundimage-header{
         padding:0;
     }
     .backgroundimage-header .content{
@@ -132,25 +132,26 @@ body {
 }
 
 
-.split-div {
+
+.split-div{
     display:inline-flex;
     justify-content: space-around;
     align-items:stretch;
     width:100%;
 }
-.split-div .content-image, .split-div .content-text {
+.split-div .content-image, .split-div .content-text{
     width:50%;
     padding:1%
 }
-.split-div .content-image img {
+.split-div .content-image img{
     width:100%;
 }
-.split-div .content-image {
+.split-div .content-image{
     display:flex;
     justify-content: center;
     align-items: center;
 }
-.split-div .content-text {
+.split-div .content-text{
     display:flex;
     flex-direction: column;
     justify-content:center;
@@ -164,7 +165,7 @@ body {
     width:75%;
     text-align: left;
 }
-#joseph-smith-jpg {
+#joseph-smith-jpg{
     width: 75%;
 }
 #about-director-head{
@@ -194,9 +195,92 @@ body {
         align-items:center;
     }
 }
-
 @media screen and (max-width: 550px){
     #joseph-smith-jpg{
         width:75%;
+    }
+}
+
+
+
+.simple-header{
+    padding:2%;
+    font-size: xx-large;
+}
+.simple-header p{
+    color:gray;
+}
+@media screen and (max-width: 900px){
+    .simple-header{
+        text-align: center;
+        font-size: x-large;
+    }
+}
+
+
+
+.calendar-event{
+    display:none;
+    align-items: center;
+    justify-content: space-between;
+    margin:2%;
+    padding:2%;
+    border: 5px solid #a70f23;
+    border-radius: 10px;
+    text-align: center;
+}
+.calendar-event .content-title{
+    width:50%;
+}
+.calendar-event .content-setting, .calendar-event .content-date{
+    width:20%;
+}
+.calendar-event .content-title p{
+    font-weight: bold;
+    color:gray;
+}
+.calendar-filter-show{
+    display:flex;
+}
+.calendar-filter-button{
+    border:none;
+    padding:1%;
+    font-size: large;
+    transition: background-color .2s;
+}
+.calendar-filter-button-active{
+    background-color: #a70f23;
+    color:white;
+}
+.calendar-filter-button:hover:not(.calendar-filter-button-active){
+    background-color:#ccc;
+    transition: background-color .2s;
+}
+@media screen and (max-width: 900px){
+    .calendar-event{
+        flex-direction: column;
+    }
+    .calendar-event .content-date, .calendar-event .content-setting{
+        font-size: xx-small;
+    }
+    .calendar-event .content-setting p {
+        font-size: initial;
+    }
+    .calendar-event .content-title, .calendar-event .content-setting, .calendar-event .content-date{
+        width:initial;
+    }
+    .calendar-filter-button{
+        padding:2%;
+    }
+}
+@media screen and (max-width: 760px) {
+    .calendar-filter-container{
+        display:flex; 
+        flex-direction: column; 
+        align-items: stretch;
+        justify-content:space-between;
+    }
+    .calendar-filter-button{
+        padding:4%;
     }
 }

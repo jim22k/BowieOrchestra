@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo_small.jpg">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet"> 
+    <title>Calendar - Bowie Orchestra</title>
+</head>
+<body onload="calendarFilter('all')">
+
+    <div class="navbar">
+        <a href="index" class="navbar-image"><image src="images/logo_small.jpg"/></a>
+        <a href="orchestras"><button>Orchestras</button></a>
+        <a href="calendar" id="navbar-active"><button>Calendar</button></a>
+        <a href="about"><button>About Us</button></a>
+    </div>
+
+    <div class="simple-header">
+        <h1>Orchestra Calendar</h1>
+        <p id="calendar-filter-head">Upcoming Events</p>
+        <div class="calendar-filter-container" id="calendar-filter-container">
+            <button class="calendar-filter-button calendar-filter-button-active" onclick="calendarFilter('all')">All Events</button>
+            <button class="calendar-filter-button" onclick="calendarFilter('calendar-filter-mandatory')">Mandatory Events</button>
+            <button class="calendar-filter-button" onclick="calendarFilter('calendar-filter-social')">Social Events</button>
+            <button class="calendar-filter-button" onclick="calendarFilter('calendar-filter-extra')">Extra-Curricular Events</button>
+        </div>
+    </div>
+
+    <div class="calendar-event calendar-filter-mandatory">
+        <div class="content-date">
+            <h1>8/29/21</h1>
+        </div>
+        <div class="content-title">
+            <h1>Orchestra Meeting & Uniform Fitting</h1>
+        </div>
+        <div class="content-setting">
+            <h1>2:00PM - 4:00PM</h1>
+            <p>BHS Orchestra Hall</p>
+        </div>
+    </div>
+    <div class="calendar-event calendar-filter-extra">
+        <div class="content-date">
+            <h1>9/1/21</h1>
+        </div>
+        <div class="content-title">
+            <h1>All State Area Cuts Posted</h1>
+        </div>
+        <div class="content-setting">
+            <h1>12:00pm</h1>
+            <p>BHS Orchestra Hall</p>
+        </div>
+    </div>
+    <div class="calendar-event calendar-filter-social">
+        <div class="content-date">
+            <h1>9/10/21</h1>
+        </div>
+        <div class="content-title">
+            <h1>Donut Social</h1>
+        </div>
+        <div class="content-setting">
+            <h1>8:15AM - 9:00AM</h1>
+            <p>BHS Orchestra Hall</p>
+        </div>
+    </div>
+    <div class="calendar-event calendar-filter-extra">
+        <div class="content-date">
+            <h1>9/16/21</h1>
+        </div>
+        <div class="content-title">
+            <h1>Region Orchestra Fees Due</h1>
+            <p>$10 Per Entry</p>
+        </div>
+        <div class="content-setting">
+            <h1>In Class</h1>
+            <p>BHS Orchestra Hall</p>
+        </div>
+    </div>
+    <div class="calendar-event calendar-filter-mandatory">
+        <div class="content-date">
+            <h1>9/23/21 - 9/24/21</h1>
+        </div>
+        <div class="content-title">
+            <h1>All City Orchestra</h1>
+            <p>8 Symphony Students Only</p>
+        </div>
+        <div class="content-setting">
+            <h1>TBD</h1>
+            <p>AISD PAC</p>
+        </div>
+    </div>
+    <div class="calendar-event calendar-filter-social">
+        <div class="content-date">
+            <h1>9/26/21</h1>
+        </div>
+        <div class="content-title">
+            <h1>Fish Fry</h1>
+        </div>
+        <div class="content-setting">
+            <h1>3:00PM - 5:00PM</h1>
+            <p>Location TBD</p>
+        </div>
+    </div>
+    <div class="calendar-event calendar-filter-social">
+        <div class="content-date">
+            <h1>10/1/21</h1>
+        </div>
+        <div class="content-title">
+            <h1>Ice Cream Social</h1>
+        </div>
+        <div class="content-setting">
+            <h1>4:45PM - 5:30PM</h1>
+            <p>BHS Orchestra Hall</p>
+        </div>
+    </div>
+    <div class="calendar-event calendar-filter-mandatory">
+        <div class="content-date">
+            <h1>10/2/21</h1>
+        </div>
+        <div class="content-title">
+            <h1>Fall Concert</h1>
+        </div>
+        <div class="content-setting">
+            <h1>1:30PM</h1>
+            <p>AISD PAC</p>
+        </div>
+    </div>
+    <div class="calendar-event calendar-filter-extra">
+        <div class="content-date">
+            <h1>10/9/21</h1>
+        </div>
+        <div class="content-title">
+            <h1>All-Region Orchestra Auditions</h1>
+        </div>
+        <div class="content-setting">
+            <h1>All Day (TBD)</h1>
+            <p>Covington Middle School</p>
+        </div>
+    </div>
+    <div class="calendar-event calendar-filter-extra">
+        <div class="content-date">
+            <h1>10/30/21</h1>
+        </div>
+        <div class="content-title">
+            <h1>All-State Taping</h1>
+            <p>$40 CASH</p>
+        </div>
+        <div class="content-setting">
+            <h1>All Day (TBD)</h1>
+            <p>Covington Middle School</p>
+        </div>
+    </div>
+    <div class="calendar-event calendar-filter-mandatory">
+        <div class="content-date">
+            <h1>11/4/21</h1>
+        </div>
+        <div class="content-title">
+            <h1>Fall Festival</h1>
+            <p>SENIORS ONLY</p>
+        </div>
+        <div class="content-setting">
+            <h1>9:00AM - 2:00PM</h1>
+            <p>AISD PAC</p>
+        </div>
+    </div>
+    <div class="calendar-event calendar-filter-extra">
+        <div class="content-date">
+            <h1>11/18/21</h1>
+        </div>
+        <div class="content-title">
+            <h1>Region Orchestra Clinic</h1>
+        </div>
+        <div class="content-setting">
+            <h1>7:00PM - 9:00PM</h1>
+            <p>AISD PAC</p>
+        </div>
+    </div>
+    <div class="calendar-event calendar-filter-extra">
+        <div class="content-date">
+            <h1>11/19/21</h1>
+        </div>
+        <div class="content-title">
+            <h1>Region Orchestra Clinic</h1>
+        </div>
+        <div class="content-setting">
+            <h1>7:00PM - 9:00PM</h1>
+            <p>AISD PAC</p>
+        </div>
+    </div>
+    <div class="calendar-event calendar-filter-extra">
+        <div class="content-date">
+            <h1>11/20/21</h1>
+        </div>
+        <div class="content-title">
+            <h1>Region Orchestra Clinic</h1>
+        </div>
+        <div class="content-setting">
+            <h1>9:00AM - 4:00PM</h1>
+            <p>AISD PAC</p>
+        </div>
+    </div>
+    <div class="calendar-event calendar-filter-extra">
+        <div class="content-date">
+            <h1>11/20/21</h1>
+        </div>
+        <div class="content-title">
+            <h1>Region Orchestra Concert</h1>
+        </div>
+        <div class="content-setting">
+            <h1>4:00PM</h1>
+            <p>AISD PAC</p>
+        </div>
+    </div>
+    <div class="calendar-event calendar-filter-mandatory">
+        <div class="content-date">
+            <h1>12/7/21</h1>
+        </div>
+        <div class="content-title content-double">
+            <h1>Choir Concert</h1>
+        </div>
+        <div class="content-setting">
+            <h1>7:00PM</h1>
+            <p>Bethany Church</p>
+        </div>
+    </div>
+    <div class="calendar-event calendar-filter-mandatory">
+        <div class="content-date">
+            <h1>12/8/21</h1>
+        </div>
+        <div class="content-title content-double">
+            <h1>Winter Concert</h1>
+        </div>
+        <div class="content-setting">
+            <h1>7:00PM</h1>
+            <p>Bowie Theatre</p>
+        </div>
+    </div>
+    <div class="calendar-event calendar-filter-social">
+        <div class="content-date">
+            <h1>12/13/21</h1>
+        </div>
+        <div class="content-title">
+            <h1>Cookie Social</h1>
+        </div>
+        <div class="content-setting">
+            <h1>4:45PM - 5:30PM</h1>
+            <p>BHS Orchestra Hall</p>
+        </div>
+    </div>
+    <div class="calendar-event calendar-filter-extra">
+        <div class="content-date">
+            <h1>12/15/21</h1>
+        </div>
+        <div class="content-title">
+            <h1>UIL Solo & Ensemble Fees Due</h1>
+        </div>
+        <div class="content-setting">
+            <h1>In Class</h1>
+            <p>BHS Orchestra Hall</p>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="calendar-filter.js"></script>
+</body>
+</html>
