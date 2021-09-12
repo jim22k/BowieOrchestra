@@ -64,7 +64,7 @@ body{
     text-decoration: #d4122c underline 2px;
 }
 .navbar-image{
-    width:5%;
+    width:4%;
 }
 .navbar-image img{
     transition:transform .1s;
@@ -77,26 +77,61 @@ body{
 #navbar-active button{
     color:#a70f23;
 }
+.navbar-icon {
+    display: none;
+    color: black;
+}
 @media screen and (max-width: 1300px){
-    .navbar-image{
-        width:10%;
-    }
     .navbar a:not(.navbar-image){
-        padding:5%;
+        padding:2%;
+    }
+    .navbar-image{
+        width:5%;
     }
 }
-@media screen and (max-width: 600px){
+@media screen and (max-width: 1070px) {
     .navbar{
         flex-direction: column;
-        position:relative;
+    }
+    .navbar:not(.navbar-responsive) a .content-down{
+        display: none;
+    }
+    .navbar-responsive a .content-up{
+        display:none;
+    }
+    .navbar-responsive{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .navbar-responsive a:not(:first-child,#navbar-active,.navbar-icon) {
+        display: none;
+    }
+    .navbar a.navbar-icon {
+        display: block;
+    }
+    .navbar .navbar-responsive {
+        position: relative;
+    }
+    .navbar .navbar-responsive .navbar-icon {
+        position: absolute;
+        right: 0;
+        top: 0;
     }
     .navbar-image{
-        padding:0;
-        width:20%;
+        width:8%;
     }
     .navbar a:hover img{
         transition:.1s;
         transform: scale(1.1);
+    }
+}
+@media screen and (max-width: 700px){
+    .navbar a:not(.navbar-image) {
+        padding:5%;
+    }
+    .navbar-image{
+        width: 15%;
     }
 }
 
@@ -282,5 +317,44 @@ body{
     }
     .calendar-filter-button{
         padding:4%;
+    }
+}
+
+
+
+.people-circles-container{
+    text-align: center;
+    margin:5%;
+}
+.people-circles{
+    display:flex;
+    align-items:flex-start;
+    justify-content: space-around;
+}
+.people-circles .content-person{
+    width:30%;
+    text-align: center;
+}
+.people-circles-container .content-header{
+    font-size: 60px;
+}
+.people-circles .content-person .content-person-picture img{
+    width:100%;
+}
+@media screen and (max-width: 950px){
+    .people-circles{
+        flex-direction: column;
+        align-items: center;
+    }
+    .people-circles .content-person{
+        width:100%;
+    }
+    .people-circles .content-person .content-person-picture img{
+        width:50%;
+    }
+}
+@media screen and (max-width: 600px){
+    .people-circles .content-person .content-person-picture img{
+        width:75%;
     }
 }

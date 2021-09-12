@@ -8,15 +8,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/fd58d3cec2.js"></script>
     <title>Home - Bowie Orchestra</title>
 </head>
 <body>
 
-    <div class="navbar">
+    <div class="navbar navbar-responsive" id="navbar">
         <a href="index" class="navbar-image"><image src="images/logo_small.jpg"/></a>
         <a href="orchestras"><button>Orchestras</button></a>
         <a href="calendar"><button>Calendar</button></a>
+        <a href="media"><button>Media</button></a>
+        <a href="boosters"><button>Booster Club</button></a>
+        <a href="sponsors"><button>Sponsors</button></a>
         <a href="about"><button>About Us</button></a>
+        <a href="javascript:void(0);" class="navbar-icon" onclick="collapseNavbar()">
+            <span class="content-up"><i class="fas fa-chevron-up"></i></span>
+            <span class="content-down"><i class="fas fa-chevron-down"></i></span>
+        </a>
     </div>
 
     <div class="backgroundimage-header" style="background-image:url('images/placeholder_orchestra_stage.jpg')">
@@ -35,5 +43,30 @@
             <image src="images/logo_large.jpg"/>
         </div>
     </div>
+
+    <div class="people-circles-container">
+        <h1 class="content-header">About Us</h1>
+        <div class="people-circles">
+            <div class="content-person">
+                <div class="content-person-picture">
+                    <image src="images/people_circles/joseph_smith.jpg"/>
+                </div>
+                <div class="content-person-description">
+                    <h1>Joseph Smith</h1>
+                    <p>Joseph D. Smith is currently the Orchestra Director for the J. Bowie High School Orchestra program. Prior to joining Bowie High School, Mr. Smith was the Assistant Orchestra Director with LBJ High School in Austin, TX from 2018-2019, where he helped obtain sweepstakes with all participating full and string orchestras in their respective UIL Contest performances.</p>
+                </div>
+            </div>
+            <div class="content-person">
+                <div class="content-person-picture">
+                    <image src="images/people_circles/orchestra_officers.jpg"/>
+                </div>
+                <div class="content-person-description">
+                    <h1>Orchestra Officers</h1>
+                    <p>Our orchestra officers consist of the highest-calbier students who go above and beyond with their hard work and dedication to the Bowie Orchestra program. In addition to being great musicians, our officers help to set up and clean up events and help the director plan and organize socials, gatherings, and other fun activities!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="scripts/navbar-compression.js"></script>
 </body>
 </html>

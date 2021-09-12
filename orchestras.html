@@ -8,15 +8,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/fd58d3cec2.js"></script>
     <title>Orchestras - Bowie Orchestra</title>
 </head>
 <body>
 
-    <div class="navbar">
+    <div class="navbar navbar-responsive" id="navbar">
         <a href="index" class="navbar-image"><image src="images/logo_small.jpg"/></a>
         <a href="orchestras" id="navbar-active"><button>Orchestras</button></a>
         <a href="calendar"><button>Calendar</button></a>
+        <a href="media"><button>Media</button></a>
+        <a href="boosters"><button>Booster Club</button></a>
+        <a href="sponsors"><button>Sponsors</button></a>
         <a href="about"><button>About Us</button></a>
+        <a href="javascript:void(0);" class="navbar-icon" onclick="collapseNavbar()">
+            <span class="content-up"><i class="fas fa-chevron-up"></i></span>
+            <span class="content-down"><i class="fas fa-chevron-down"></i></span>
+        </a>
     </div>
 
     <div class="backgroundimage-header" style="background-image: url('images/instruments.jpg');">
@@ -66,5 +74,6 @@
             <p>This is the most advanced orchestra at Bowie High School. It is composed mostly of 11th and 12th grade students. In an average year there are five or fewer 9th graders in this group. <span style="font-weight: bold;">Students in this group are playing in 3rd-7th positions, violas are able to sight-read in treble clef, and cellos are able to sight-read in tenor clef and play in treble clef.</span> This orchestra regularly plays professional level repertoire. There is a mandatory after school rehearsal every Tuesday from 4:30-6:00 for the Symphony Orchestra.<br/><br/><span style="font-weight:bold">Entry to this orchestra is by audition only.</span></p>
         </div>
     </div>
+    <script type="text/javascript" src="scripts/navbar-compression.js"></script>
 </body>
 </html>

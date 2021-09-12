@@ -8,15 +8,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/fd58d3cec2.js"></script>
     <title>About Us - Bowie Orchestra</title>
 </head>
 <body>
 
-    <div class="navbar">
+    <div class="navbar navbar-responsive" id="navbar">
         <a href="index" class="navbar-image"><image src="images/logo_small.jpg"/></a>
         <a href="orchestras"><button>Orchestras</button></a>
         <a href="calendar"><button>Calendar</button></a>
+        <a href="media"><button>Media</button></a>
+        <a href="boosters"><button>Booster Club</button></a>
+        <a href="sponsors"><button>Sponsors</button></a>
         <a href="about" id="navbar-active"><button>About Us</button></a>
+        <a href="javascript:void(0);" class="navbar-icon" onclick="collapseNavbar()">
+            <span class="content-up"><i class="fas fa-chevron-up"></i></span>
+            <span class="content-down"><i class="fas fa-chevron-down"></i></span>
+        </a>
     </div>
 
     <div class="backgroundimage-header" style="background-image: url('images/placeholder_orchestra_stage.jpg');">
@@ -34,6 +42,7 @@
         </div>
         <div class="content-image orchestra-split-div-name" >
             <image id="joseph-smith-jpg" src="images/joseph_smith.jpg"/>
+            <script type="text/javascript" src="scripts/navbar-compression.js"></script>
         </div>
     </div>
 </body>

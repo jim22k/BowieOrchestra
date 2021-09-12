@@ -8,15 +8,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/fd58d3cec2.js"></script>
     <title>Calendar - Bowie Orchestra</title>
 </head>
 <body onload="calendarFilter('all')">
 
-    <div class="navbar">
+    <div class="navbar navbar-responsive" id="navbar">
         <a href="index" class="navbar-image"><image src="images/logo_small.jpg"/></a>
         <a href="orchestras"><button>Orchestras</button></a>
         <a href="calendar" id="navbar-active"><button>Calendar</button></a>
+        <a href="media"><button>Media</button></a>
+        <a href="boosters"><button>Booster Club</button></a>
+        <a href="sponsors"><button>Sponsors</button></a>
         <a href="about"><button>About Us</button></a>
+        <a href="javascript:void(0);" class="navbar-icon" onclick="collapseNavbar()">
+            <span class="content-up"><i class="fas fa-chevron-up"></i></span>
+            <span class="content-down"><i class="fas fa-chevron-down"></i></span>
+        </a>
     </div>
 
     <div class="simple-header">
@@ -77,19 +85,6 @@
         <div class="content-setting">
             <h1>In Class</h1>
             <p>BHS Orchestra Hall</p>
-        </div>
-    </div>
-    <div class="calendar-event calendar-filter-mandatory">
-        <div class="content-date">
-            <h1>9/23/21 - 9/24/21</h1>
-        </div>
-        <div class="content-title">
-            <h1>All City Orchestra</h1>
-            <p>8 Symphony Students Only</p>
-        </div>
-        <div class="content-setting">
-            <h1>TBD</h1>
-            <p>AISD PAC</p>
         </div>
     </div>
     <div class="calendar-event calendar-filter-social">
@@ -262,7 +257,21 @@
             <p>BHS Orchestra Hall</p>
         </div>
     </div>
+    <div class="calendar-event calendar-filter-mandatory">
+        <div class="content-date">
+            <h1>1/12/22 - 1/13/21</h1>
+        </div>
+        <div class="content-title">
+            <h1>All City Orchestra</h1>
+            <p>8 Symphony Students Only</p>
+        </div>
+        <div class="content-setting">
+            <h1>TBD</h1>
+            <p>AISD PAC</p>
+        </div>
+    </div>
 
-    <script type="text/javascript" src="calendar-filter.js"></script>
+    <script type="text/javascript" src="scripts/calendar-filter.js"></script>
+    <script type="text/javascript" src="scripts/navbar-compression.js"></script>
 </body>
 </html>
