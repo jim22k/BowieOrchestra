@@ -38,6 +38,27 @@ body{
 
 
 
+.href-arrow{
+    color:#a70f23;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: larger;
+    transition: .2s;
+}
+.href-arrow span{
+    display:none;
+}
+.href-arrow:hover span{
+    display: initial;
+    transition: .2s;
+}
+.href-arrow:hover{
+    font-size: x-large;
+    transition: .2s;
+}
+
+
+
 .navbar{
     display: flex;
     align-items: center;
