@@ -13,34 +13,86 @@ permalink: /404.html
 
   <title>Page Not Found - Bowie Orchestra</title>
 </head>
-<body style="padding:0;margin:0;display: flex;flex-direction:column;justify-content:center;align-items: center;background-color: black;">
+<body>
+    <div class="content-mobile">
+        <h1>404</h1>
+        <h3>Page not found</h3>
+        <p style="font-size:large;margin:10% 20%;">This page either doesn't exist or the URL is incorrect.</p>
+        <a href="index" class="content"><button class="content">Back to home page</button></a>
+    </div>
     <img width="60%" src="images/404.jpg"/>
     <a href="index" style="margin-top: 2%;width:100%;text-align: center;"><button>Move along <span>- return to home page</span></button></a>
 </body>
 
 <style>
-    a{
+    body{
+        padding:0;
+        margin:0;
+        display: flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items: center;
+        background-color: black;
+        font-family: 'Rubik', sans-serif;
+    }
+    .content-mobile {
+        display:none;
+        text-align: center;
+        font-size: xx-large;
+    }
+    a:not(.content){
         margin-top: 2%;
         width:100%;
         text-align: center;
     }
-    button{
+    button:not(.content){
         background-color: black;
         border: 2px gold solid;
         color:gold;
         padding:10px 10px;
         width:fit-content;
         transition: .2s;
+        font-size: large;
     }
-    button span{
+    button:not(.content) span{
         display: none;
     }
-    button:hover{
+    button:not(.content):hover{
         background-color:gold;
         transition: .2s;
         color:black;
     }
-    button:hover span{
+    button:not(.content):hover span{
         display:initial;
+    }
+    @media screen and (max-width:1700px) {
+        img{
+            width:80%;
+        }
+    }
+    @media screen and (max-width:1000px) {
+        img{
+            width:100%;
+        }
+    }
+    @media screen and (max-width:750px) {
+        img,a:not(.content){
+            width:100%;
+            display:none;
+        }
+        body{
+            background-color:white;
+        }
+        .content-mobile{
+            display:initial;
+        }
+        button{
+            background-color: #a70f23;
+            color:white;
+            border:none;
+            padding:5%;
+            font-size: large;
+            border-radius: 10px;
+        }
     }
 </style>
