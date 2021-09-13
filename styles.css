@@ -373,6 +373,9 @@ body{
     .people-circles .content-person .content-person-picture img{
         width:50%;
     }
+    .people-circles .content-person {
+        margin-bottom: 10%;
+    }
 }
 @media screen and (max-width: 600px){
     .people-circles .content-person .content-person-picture img{
