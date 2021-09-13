@@ -12,6 +12,35 @@ permalink: /404.html
   <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet"> 
 
   <title>Page Not Found - Bowie Orchestra</title>
-
-  <p>404 error</p>
 </head>
+<body style="padding:0;margin:0;display: flex;flex-direction:column;justify-content:center;align-items: center;background-color: black;">
+    <img width="60%" src="images/404.jpg"/>
+    <a href="index" style="margin-top: 2%;width:100%;text-align: center;"><button>Move along <span>- return to home page</span></button></a>
+</body>
+
+<style>
+    a{
+        margin-top: 2%;
+        width:100%;
+        text-align: center;
+    }
+    button{
+        background-color: black;
+        border: 2px gold solid;
+        color:gold;
+        padding:10px 10px;
+        width:fit-content;
+        transition: .2s;
+    }
+    button span{
+        display: none;
+    }
+    button:hover{
+        background-color:gold;
+        transition: .2s;
+        color:black;
+    }
+    button:hover span{
+        display:initial;
+    }
+</style>
