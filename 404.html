@@ -14,85 +14,53 @@ permalink: /404.html
   <title>Page Not Found - Bowie Orchestra</title>
 </head>
 <body>
-    <div class="content-mobile">
-        <h1>404</h1>
+    <div class="content">
+        <h1>Got lost in the music.</h1>
         <h3>Page not found</h3>
-        <p style="font-size:large;margin:10% 20%;">This page either doesn't exist or the URL is incorrect.</p>
-        <a href="index" class="content"><button class="content">Back to home page</button></a>
+        <p>This page either doesn't exist or isn't available yet.</p>
+        <a href="index" style="margin-bottom: 10%;"><button>Back to home page</button></a>
     </div>
-    <img width="60%" src="images/404.jpg"/>
-    <a href="index" style="margin-top: 2%;width:100%;text-align: center;"><button>Move along <span>- return to home page</span></button></a>
 </body>
 
 <style>
     body{
         padding:0;
         margin:0;
-        display: flex;
-        flex-direction:column;
-        justify-content:center;
-        align-items: center;
-        background-color: black;
         font-family: 'Rubik', sans-serif;
-    }
-    .content-mobile {
-        display:none;
         text-align: center;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+        position: fixed;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
         font-size: xx-large;
     }
-    a:not(.content){
-        margin-top: 2%;
-        width:100%;
-        text-align: center;
+    h1{
+        margin:0;
     }
-    button:not(.content){
-        background-color: black;
-        border: 2px gold solid;
-        color:gold;
-        padding:10px 10px;
-        width:fit-content;
-        transition: .2s;
-        font-size: large;
+    h3{
+        margin: 5% 0 0;
     }
-    button:not(.content) span{
-        display: none;
-    }
-    button:not(.content):hover{
-        background-color:gold;
-        transition: .2s;
-        color:black;
-    }
-    button:not(.content):hover span{
-        display:initial;
-    }
-    @media screen and (max-width:1700px) {
-        img{
-            width:80%;
-        }
-    }
-    @media screen and (max-width:1000px) {
-        img{
-            width:100%;
-        }
+    button{
+        background-color: #a70f23;
+        color:white;
+        border:none;
+        padding:1%;
+        border-radius: 10px;
     }
     @media screen and (max-width:750px) {
-        img,a:not(.content){
-            width:100%;
-            display:none;
-        }
-        body{
-            background-color:white;
-        }
-        .content-mobile{
-            display:initial;
+        .content{
+            margin: 0 5%;
         }
         button{
-            background-color: #a70f23;
-            color:white;
-            border:none;
-            padding:5%;
             font-size: large;
-            border-radius: 10px;
+            padding:5%;
         }
     }
 </style>
