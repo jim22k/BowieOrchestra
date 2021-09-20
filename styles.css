@@ -427,7 +427,7 @@ body{
     display:flex;
     flex-direction: column;
     align-items: center;
-    margin: 2% 0;
+    margin: 2% 0 10%;
 }
 .contact-pill *{
     text-align:center;
