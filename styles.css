@@ -50,11 +50,11 @@ body{
 }
 .href-arrow:hover span{
     display: initial;
-    transition: .2s;
+    transition:.2s;
 }
 .href-arrow:hover{
     font-size: x-large;
-    transition: .2s;
+    transition:.2s;
 }
 
 
@@ -190,7 +190,7 @@ body{
 
 
 .split-div{
-    display:inline-flex;
+    display:flex;
     justify-content: space-around;
     align-items:stretch;
     width:100%;
@@ -221,6 +221,14 @@ body{
     width:75%;
     text-align: left;
 }
+#booster-split-div{
+    padding:5% 0;
+    margin:3% auto;
+    width:95%;
+    border-radius: 30px;
+    background-color: #a70f23;
+    color:white;
+}
 #joseph-smith-jpg{
     width: 75%;
 }
@@ -249,6 +257,11 @@ body{
     }
     #about-director-head{
         align-items:center;
+    }
+    #booster-split-div{
+        margin:0 0 5%;
+        width:100%;
+        border-radius: 0;
     }
 }
 @media screen and (max-width: 550px){
@@ -381,4 +394,33 @@ body{
     .people-circles .content-person .content-person-picture img{
         width:75%;
     }
+}
+
+
+
+.header-list{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header-list *{
+    text-align: center;
+}
+.header-list .content-subhead{
+    color:#777;
+}
+.header-list .content-list{
+    font-size: x-large;
+}
+
+
+
+.contact-pill{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2% 0;
+}
+.contact-pill *{
+    text-align:center;
 }
