@@ -165,8 +165,14 @@ body{
     display:flex;
     align-items: center;
     justify-content: center;
-    padding:10%;
     box-shadow: inset 10000px 0 0 0 rgba(0,0,0,0.5);
+}
+.backgroundimage-header:not(.backgroundimage-header-small){
+    padding:10%;
+}
+.backgroundimage-header-small{
+    padding:2%;
+    margin: 2% 0;
 }
 .backgroundimage-header .content{
     color:white;
@@ -182,8 +188,10 @@ body{
     }
     .backgroundimage-header .content{
         width:100%;
-        padding: 30% 3%;
         border-radius: 0;
+    }
+    .backgroundimage-header:not(.backgroundimage-header-small){
+        padding: 30% 3%;
     }
 }
 
