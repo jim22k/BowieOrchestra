@@ -225,14 +225,14 @@ body{
     align-items: center;
     text-align:center;
 }
-.orchestra-split-div-name{
+.split-div-weighted .content-weighted{
     width:25%;
 }
-.orchestra-split-div div:not(.orchestra-split-div-name){
+.split-div-weighted div:not(.content-weighted){
     width:75%;
     text-align: left;
 }
-#booster-split-div{
+.split-div-pill{
     padding:5% 0;
     margin:3% auto;
     width:95%;
@@ -258,7 +258,7 @@ body{
         width:100%;
         padding:0
     }
-    .orchestra-split-div div:not(.orchestra-split-div-name){
+    .split-div-weighted div:not(.content-weighted){
         width:96%;
         padding:2%;
         text-align: center;
@@ -269,7 +269,7 @@ body{
     #about-director-head{
         align-items:center;
     }
-    #booster-split-div{
+    .split-div-pill{
         margin:0 0 5%;
         width:100%;
         border-radius: 0;
