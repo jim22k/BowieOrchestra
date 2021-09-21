@@ -191,7 +191,10 @@ body{
         border-radius: 0;
     }
     .backgroundimage-header:not(.backgroundimage-header-small){
-        padding: 30% 3%;
+        padding: 0%;
+    }
+    .backgroundimage-header:not(.backgroundimage-header-small) .content{
+        padding:30% 3%;
     }
 }
 
