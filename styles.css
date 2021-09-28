@@ -435,3 +435,25 @@ body{
 .contact-pill *{
     text-align:center;
 }
+
+
+
+.roster{
+    display:none;
+}
+.roster-show {
+    display:initial;
+}
+.roster-button{
+    border:none;
+    background:none;
+    color:#a70f23;
+    font-size: large;
+    font-weight:600;
+    padding:0;
+    margin:0;
+}
+.roster span{
+    font-weight: bolder;
+    font-size: large;
+}
