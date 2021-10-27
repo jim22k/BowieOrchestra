@@ -457,3 +457,17 @@ body{
     font-weight: bolder;
     font-size: large;
 }
+
+
+
+.sponsors .content-sponsor{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    margin:5%;
+    padding:5%;
+}
+.sponsors .content-sponsor div{
+    width:30%;
+    text-align: center;
+}
