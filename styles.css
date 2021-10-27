@@ -464,10 +464,35 @@ body{
     display:flex;
     align-items:center;
     justify-content: space-between;
-    margin:5%;
+    margin:5% 0;
     padding:5%;
 }
 .sponsors .content-sponsor div{
     width:30%;
     text-align: center;
+}
+@media screen and (max-width: 1000px){
+    .sponsors{
+        text-align:center;
+        margin:2% 0;
+    }
+    .sponsors .content-sponsor{
+        display:inline-block;
+        vertical-align: middle;
+        padding: 2%;
+        margin: 2%;
+        width: 40%;
+    }
+    .sponsors .content-sponsor div{
+        width:100%;
+        margin: 5% 0;
+    }
+    .sponsors .content-sponsor .content-logo img{
+        width:80%;
+    }
+}
+@media screen and (max-width: 700px){
+    .sponsors .content-sponsor{
+        width:90%;
+    }
 }
