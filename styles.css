@@ -356,6 +356,17 @@ body{
 .wide-info .content-info a button{
     text-align: left;
 }
+.wide-info-centered{
+    align-items:center;
+    text-align: center;
+}
+.wide-info-centered .content-info{
+    padding:0;
+}
+.wide-info-centered .content-info a button{
+    text-align: center;
+}
+
 @media screen and (max-width:900px){
     .wide-info{
         align-items:center;
