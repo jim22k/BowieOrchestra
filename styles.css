@@ -353,6 +353,21 @@ body{
     border:none;
     background-color:gray;
 }
+.wide-info .content-info a button{
+    text-align: left;
+}
+@media screen and (max-width:900px){
+    .wide-info{
+        align-items:center;
+        text-align: center;
+    }
+    .wide-info .content-info{
+        padding:0;
+    }
+    .wide-info .content-info a button{
+        text-align: center;
+    }
+}
 
 
 
