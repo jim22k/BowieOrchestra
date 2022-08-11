@@ -334,6 +334,28 @@ body{
 
 
 
+.wide-info{
+    display:flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: space-around;
+    padding:5% 10%;
+}
+.wide-info .content-header{
+    color:gray;
+}
+.wide-info .content-info{
+    padding:0 2%;
+}
+.wide-info hr{
+    height:5px;
+    width:100%;
+    border:none;
+    background-color:gray;
+}
+
+
+
 .calendar-event{
     display:none;
     align-items: center;
@@ -501,12 +523,34 @@ body{
     display:flex;
     align-items:center;
     justify-content: space-between;
-    margin:5% 0;
+    margin:10% 5%;
     padding:5%;
+    border: 10px solid #d4122c;
+    border-radius:25px;
 }
+.sponsors .content-sponsor-diamond{
+    box-shadow: 0px 0px 40px 10px rgb(0, 238, 255);
+}
+.sponsors .content-sponsor-diamond .content-type{
+    color: white;
+    text-shadow: 0 0 5px rgb(0, 238, 255),0 0 5px rgb(0, 238, 255),0 0 10px rgb(0, 238, 255),0 0 20px rgb(0, 238, 255);
+}
+.sponsors .content-sponsor-gold{
+    box-shadow: 0px 0px 40px 10px rgb(255, 219, 100);
+}
+.sponsors .content-sponsor-gold .content-type{
+   color: rgb(225, 193, 89);
+}
+.sponsors .content-sponsor-silver .content-type{
+   color: #aaa;
+}
+
 .sponsors .content-sponsor div{
     width:30%;
     text-align: center;
+}
+.sponsors .content-sponsor .content-logo img{
+    width:100%;
 }
 @media screen and (max-width: 1000px){
     .sponsors{
