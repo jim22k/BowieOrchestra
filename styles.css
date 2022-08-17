@@ -432,11 +432,6 @@ body{
     .calendar-event .content-title, .calendar-event .content-setting, .calendar-event .content-date{
         width:initial;
     }
-    .calendar-filter-button{
-        padding:2%;
-    }
-}
-@media screen and (max-width: 760px) {
     .calendar-filter-container{
         display:flex; 
         flex-direction: column; 
