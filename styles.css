@@ -250,6 +250,12 @@ body{
     align-items:center;
     padding:2%;
 }
+.split-div-wide .content-image{
+    width:20%;
+}
+.split-div-wide .content-image img{
+    width:100%;
+}
 .pill-bottom{
     width:75%;
     margin:5% auto;
@@ -303,6 +309,9 @@ body{
     }
     .split-div-wide *{
         text-align:center;
+    }
+    .split-div-wide .content-image{
+        width:50%;
     }
 }
 @media screen and (max-width: 550px){
