@@ -611,6 +611,38 @@ body{
 
 
 
+.photo-gallery{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content:center;
+    width:100%;
+}
+.photo-row{
+    display:flex;
+    align-items:stretch;
+    justify-content:center;
+    width:90%;
+}
+.photo-row img{
+    width:33%;
+}
+@media screen and (max-width:1070px){
+    .photo-gallery .photo-row{
+        width:100%;
+    }
+}
+@media screen and (max-width:500px){
+    .photo-gallery .photo-row{
+        flex-direction:column;
+    }
+    .photo-row img{
+        width:100%
+    }
+}
+
+
+
 .attach-top{
     margin-top:0;
 }
