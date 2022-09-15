@@ -166,6 +166,8 @@ body{
     align-items: center;
     justify-content: center;
     box-shadow: inset 10000px 0 0 0 rgba(0,0,0,0.5);
+    background-image: url('images/gallery/landscape.jpg');
+    background-position-y: 90%;
 }
 .backgroundimage-header:not(.backgroundimage-header-small){
     padding:10%;
@@ -176,7 +178,7 @@ body{
 }
 .backgroundimage-header .content{
     color:white;
-    background-color:rgba(0,0,0,0.5);
+    background-color:rgba(0,0,0,0.7);
     border-radius: 40px;
     padding:3%;
     text-align: center;
