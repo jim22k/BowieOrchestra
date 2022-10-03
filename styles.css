@@ -559,7 +559,7 @@ body{
 .sponsors .content-sponsor{
     display:flex;
     align-items:center;
-    justify-content: space-between;
+    justify-content: space-around;
     margin:10% 5%;
     padding:5%;
     border: 10px solid #d4122c;
