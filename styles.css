@@ -274,7 +274,7 @@ body{
     border-radius: 30px;
 }
 
-#joseph-smith-jpg{
+#director-jpg{
     width: 75%;
 }
 #about-director-head{
@@ -297,7 +297,7 @@ body{
         padding:2%;
         text-align: center;
     }
-    #joseph-smith-jpg{
+    #director-jpg{
         width:50%;
     }
     #about-director-head{
@@ -327,7 +327,7 @@ body{
         padding:2% 2% 10%;
         border-radius: 0;
     }
-    #joseph-smith-jpg{
+    #director-jpg{
         width:75%;
     }
 }
